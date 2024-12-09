@@ -1,5 +1,5 @@
 import{Josefin_Sans} from "next/font/google"
-import Image from "next/image";
+
 
 const Josefin_=Josefin_Sans({subsets:["latin"]});
 const Featuredproducts = () => {

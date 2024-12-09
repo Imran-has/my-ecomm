@@ -5,6 +5,7 @@ import Hero from './components/hero'
 import Featuredproducts from './components/featuredproducts'
 import Grid from './components/grid'
 import Latestproduct from './components/latestproduct'
+import Grid1 from './components/grid1'
  
 const Homepage = () => {
   return (
@@ -15,7 +16,7 @@ const Homepage = () => {
       <Featuredproducts/>
       <Grid/>
       <Latestproduct/>
-      
+      <Grid1/>
     </div>
   )
 }
