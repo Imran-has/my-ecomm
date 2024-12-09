@@ -6,7 +6,7 @@ const Featuredproducts = () => {
     return (
         <div className="grid grid-clos-4 gap-4 ">
              <div className="flex justify-center items-center pt-[30px]">
-        <h1 className={`${Josefin_.className}flex justify-center items-center font-bold text-[#1A0B5B] gap-6">`}>Featured Products</h1>
+        <h1 className={`${Josefin_.className}flex justify-center items-center font-bold text-[#1A0B5B] gap-6 text-2xl">`}>Featured Products</h1>
       </div>
         </div>
      
