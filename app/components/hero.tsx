@@ -16,13 +16,19 @@ const Hero = () => {
       <div className='flex justify-center items-center w-[559px] h-[56px text-[#8A8FB9]'>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
         in phasellus non in justo.</p>
+       
         </div>
+        
         <div className='w-[163px] h-[50px]'>
             <button className='bg-[#FB2E86] text-white items-center w-[163px] h-[50px]'>Shop Now</button>
         </div>
         <div className='mt-10 pt-6'>
-            <Image src={"/images/image 32.svg"} alt="light" width={387} height={387} className='top[122px] left[70px]'></Image>
+        <div className="flex justify-center items-center">
+            <Image src={"/images/sofa promotional header.svg"} alt="light" width={387} height={387} className='top[122px] left[70px]'></Image>
         
+        </div>
+            <Image src={"/images/image 32 (2).svg"} alt="light" width={387} height={387} className='top[122px] left[70px]'></Image>
+           
         </div>
         
         
