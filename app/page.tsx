@@ -12,6 +12,9 @@ import Shapofer from './components/shapofer'
 import Uniquefeature from './components/uniquefeature' 
 import Trendingproduct from './components/trendingproduct'
 import Grid3 from './components/grid3'
+import Grid4 from './components/grid4'
+import Discountitems from "./components/discountitems";
+import Grid5 from './components/grid5'
  
 const Homepage = () => {
   return (
@@ -28,6 +31,9 @@ const Homepage = () => {
       <Uniquefeature/>
       < Trendingproduct/>
       <Grid3/>
+      <Grid4/>
+      < Discountitems/>
+      <Grid5/>
     </div>
   )
 }

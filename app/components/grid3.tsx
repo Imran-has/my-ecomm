@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Grid3 = () => {
   return (
-    <div className='grid grid-clos-1  sm:grid-clos-2 md:grid-cols-3 lg:grid-cols-4 gap-3 items-center justify-center bg-[#F7F7F7]  h-[350px]'>
+    <div className='grid grid-clos-1  sm:grid-clos-2 md:grid-cols-3 lg:grid-cols-6 gap-3 items-center justify-center bg-[#F7F7F7]  h-[350px]'>
     <div className="border p-10 rounded-lg hover:shadow-lg transition"><Image src={"/images/image 1171.svg"} alt=" chair" width={247} height={244} className='top[122px] left[70px]'></Image>
       <div>
         <ul className="flex justify-between gap-3">
@@ -42,6 +42,7 @@ const Grid3 = () => {
         </ul>
        </div>
        </div>
+       
     </div>
   )
 }
