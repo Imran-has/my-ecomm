@@ -15,6 +15,11 @@ import Grid3 from './components/grid3'
 import Grid4 from './components/grid4'
 import Discountitems from "./components/discountitems";
 import Grid5 from './components/grid5'
+import Topcategories from './components/topcategories'
+import Grid6 from './components/grid6'
+import Getlatest from './components/get latest'
+import Latestblog from './components/latestblog'
+import Grid7 from './components/grid7'
  
 const Homepage = () => {
   return (
@@ -34,6 +39,11 @@ const Homepage = () => {
       <Grid4/>
       < Discountitems/>
       <Grid5/>
+      <Topcategories/>
+      <Grid6/>
+      <Getlatest />
+      <Latestblog/>
+      <Grid7/>
     </div>
   )
 }
