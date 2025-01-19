@@ -20,6 +20,7 @@ import Grid6 from './components/grid6'
 import Getlatest from './components/get latest'
 import Latestblog from './components/latestblog'
 import Grid7 from './components/grid7'
+import  Footer from "./components/footer"
  
 const Homepage = () => {
   return (
@@ -44,6 +45,7 @@ const Homepage = () => {
       <Getlatest />
       <Latestblog/>
       <Grid7/>
+      <Footer/>
     </div>
   )
 }
