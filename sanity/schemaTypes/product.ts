@@ -49,6 +49,16 @@ export default {
         title: 'Stock Level',
         validation: (Rule: any) => Rule.min(0).error('Stock level must be a positive number.'),
       },
+    
+{
+name:"slug",
+type:"slug",
+title:"slug",
+options:{
+source: "name" 
+}
+
+},
       {
         name: 'category',
         type: 'string',
