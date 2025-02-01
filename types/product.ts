@@ -12,13 +12,14 @@
     description:string;
     discountPercentage:number;
     isFeaturedProduct:boolean;
-    stockLevel:string;
+    stockLevel:number;
     category:string;
     slug:{
         _type :"slug",
         current: string;
     },
         
+    
 
 
 

@@ -6,6 +6,8 @@ import { Product } from "@/types/product";
 import React, { useEffect, useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
+import { addToCart } from "./Action/actions";
+import Swal from "sweetalert2";
 
 
 
@@ -107,7 +109,19 @@ const Fenture = () => {
     }
     fetchProducts();
   }, []);
-
+  
+  const handleAddToCart = (e: React.MouseEvent, product: Product) => {
+    e.preventDefault();
+    Swal.fire({
+      position:"top-right",
+      icon:"success",
+      title:`${product.name}added to cart`,
+      showConfirmButton:false,
+      timer:1000
+    })
+    addToCart(product)
+  };
+  
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-6 text-center">Our Latest fenture</h2>
@@ -139,6 +153,10 @@ const Fenture = () => {
               {product.discountPercentage ? `$${product.discountPercentage}` : "   No discount available"}
               
             </p>
+            <button className="bg-gradient-to-r from-red-500 to-purple-500 text white font-semibold py-2 px-5 rounded shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-200 ease-in-out"
+              onClick={(e)=>handleAddToCart(e,product)}>
+                Add to Cart
+            </button>
             </Link>
           </div>
          
