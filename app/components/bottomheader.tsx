@@ -1,7 +1,7 @@
 import React from 'react'
 import{Josefin_Sans} from "next/font/google"
 import Link from 'next/link';
-import { HiMagnifyingGlass } from "react-icons/hi2";
+// import { HiMagnifyingGlass } from "react-icons/hi2";
 
 const Josefin_=Josefin_Sans({subsets:["latin"]});
 
@@ -25,10 +25,11 @@ const Bottomheader = () => {
              
              type="text"
              placeholder='search...'
-             className='p-2  text-white-900 w-[347px] h-[38px]'
+             className='p-2  text-white-900 w-[347px] h-[38px]'                                                      
              
             />
-            <button className='absolute right-1  top-1/6 transform-y 1/2 p-3 border-4 text-white bg-pink-600 ml-10'><HiMagnifyingGlass /></button>
+                                                                                                                        {/* <HiMagnifyingGlass /> */}
+            <button className='absolute right-1  top-1/6 transform-y 1/2 p-3 border-4 text-white bg-pink-600 ml-10'></button>
             
             
             </div>
