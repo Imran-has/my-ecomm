@@ -75,9 +75,10 @@ import { getCartItems, removeFromCart, updateCartQuantity } from '../Action/acti
 import swal, { SweetAlertResult } from 'sweetalert2'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/lib/image'
+import { useRouter } from 'next/navigation';
 const Cartpage = () => {
   const [cartItem, setCartItems] = useState<Product[]>([])
-
+  
   useEffect(() => {
     setCartItems(getCartItems())
   }, [])
@@ -115,10 +116,13 @@ const Cartpage = () => {
   }
 
   const calculatedTotal = () => {
-    return cartItem.reduce((total, item) => total + item.price * item.stockLevel, 0)
-  }
+    return cartItem.reduce((total, item) => total + item.price * item.stockLevel, 0);
+  };
+  const router=useRouter();
+  
 
   const handleProceed = () => {
+   
     swal.fire({
       title: "Proceed to Checkout",
       text: "Please review your cart before checkout",
@@ -129,10 +133,11 @@ const Cartpage = () => {
       confirmButtonText: "Yes, Proceed"
     }).then((result) => {
       if (result.isConfirmed) {
-        swal.fire("Success", "Your order has been successfully processed", "success")
+        swal.fire("Success", "Your order has been successfully processed", "success");
+        router.push("/checkout");
         setCartItems([]);
       }
-    })
+    });
   };
 
   return (
